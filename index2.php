@@ -27,7 +27,7 @@
 					<div class="col-lg-4 mx-auto">
 						<section class="ml-4 mr-4">
 							<center><img width="180" src="assets/images/logos.png" alt="" class="img-responsive animate__animated animate__pulse" /></center><br>
-							<form id="sign_in" method="POST" action="administrator/home.php?v=dashboard" class="animate__animated animate__pulse" onsubmit="return validateForm()">
+							<form id="sign_in" method="POST" action="view/home.php?v=dashboard" class="animate__animated animate__pulse" onsubmit="return validateForm()">
 								<div class="mt-3">
 									<input type="text" name="userid" class="form-control form-control-sm" id="userid" placeholder="User ID">
 								</div>
