@@ -113,7 +113,7 @@
 						<span class="nav-link menu-title">Menu</span>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" aria-expanded="false" aria-controls="ui-basic" href="#" onClick="window.location='home.php?v=docapproval'">
+						<a class="nav-link" aria-expanded="false" aria-controls="ui-basic" href="#" onClick="window.location='home.php?v=dochistory'">
 							<i class="menu-icon"><img src="../assets/images/icon/linear/document-text.svg" class=""></i>
 							<span class="menu-title">Document Approval <span style="color:red;">●</span>
 						</a>

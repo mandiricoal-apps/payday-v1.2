@@ -6,12 +6,12 @@
      <hr>
      <div class="row mb-3">
       <div class="col-lg-3 col-md-12 col-sm-12 pb-2">
-        <a href="#" style="text-decoration: none;color: #343a40;">
+        <a href="home.php?v=dochistory" style="text-decoration: none;color: #343a40;">
           <div class="card round" style="background-color: #e3ffee;">
             <div class="card-body">
               <div class="d-flex">
                 <div class="p-2">
-                  <h5><img src="../assets/images/icon/broken/document.svg" alt="profile" /> Signed</h5>
+                  <h5><img src="../assets/images/icon/broken/document.svg" alt="profile" /> History</h5>
                 </div>
                 <div class="ml-auto p-2">
                   <h5><img src="../assets/images/icon/broken/arrow-right.svg" alt="profile" /></h5>
@@ -39,7 +39,7 @@
       </div>
     </div>
 
-    <h5>Document Approval History <small>( Last 1 month )</small></h5>
+    <h5>Document Approval Signed <small>( Last 1 month )</small></h5>
     <hr>
     <div class="table-responsive p-3">
       <div class="row justify-content-between">
@@ -68,19 +68,17 @@
       <table id="datatables" class="table table-striped" style="width:100%">
         <thead>
           <tr>
-            <th>Name</th>
             <th>Date</th>
-            <th>Category</th>
-            <th>Leave Date</th>
+            <th>Document Type</th>
+            <th>Status</th>
             <th>Actions</th>
           </tr>
         </thead>
         <tfoot>
           <tr>
-            <th>Name</th>
             <th>Date</th>
-            <th>Category</th>
-            <th>Leave Date</th>
+            <th>Document Type</th>
+            <th>Status</th>
             <th>Actions</th>
           </tr>
         </tfoot>
@@ -98,12 +96,12 @@
     .appendTo('#datatables tfoot');
 
     var table = $('#datatables').DataTable({
-      ajax: 'dataset/leave.json', //get data from json
+      ajax: 'dataset/document_approval_signed.json', //get data from json
       orderCellsBottom: true,
       fixedHeader: true,
       order: [
-      [1, 'desc']
-      ],
+        [1, 'desc']
+        ],
       initComplete: function() {
         var api = this.api();
         api

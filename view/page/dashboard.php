@@ -345,27 +345,32 @@
 		<div class="element-container">
 			<a href="home.php?v=dashboard" style="text-decoration:none;">
 				<span class="float-element tooltip-left">
-					<i class="material-icons pl-2"><img src="../assets/images/icon/bulk/arrow-right-3.svg" class=""> Sisakty</i>
+					<i class="material-icons pl-2"><img src="../assets/images/icon/sisakty.png" class="" width="15%"> Sisakty</i>
 				</span>
 			</a>
 			<a href="home.php?v=dashboard" style="text-decoration:none;">
 				<span class="float-element tooltip-left">
-					<i class="material-icons pl-2"><img src="../assets/images/icon/bulk/arrow-right-3.svg" class=""> Medicoal</i>
+					<i class="material-icons pl-2"><img src="../assets/images/icon/medicoal.png" class="" width="15%"> Medicoal</i>
 				</span>
 			</a>
 			<a href="home.php?v=dashboard" style="text-decoration:none;">
 				<span class="float-element tooltip-left">
-					<i class="material-icons pl-2"><img src="../assets/images/icon/bulk/arrow-right-3.svg" class=""> Optimals</i>
+					<i class="material-icons pl-2"><img src="../assets/images/icon/optimals.png" class="" width="15%"> Optimals</i>
 				</span>
 			</a>
 			<a href="home.php?v=dashboard" style="text-decoration:none;">
 				<span class="float-element tooltip-left">
-					<i class="material-icons pl-2"><img src="../assets/images/icon/bulk/arrow-right-3.svg" class=""> Siaga</i>
+					<i class="material-icons pl-2"><img src="../assets/images/icon/siaga.png" class="" width="15%"> Siaga</i>
 				</span>
 			</a>
 			<a href="home.php?v=dashboard" style="text-decoration:none;">
 				<span class="float-element tooltip-left">
-					<i class="material-icons pl-2"><img src="../assets/images/icon/bulk/arrow-right-3.svg" class=""> Sipaling Hijau</i>
+					<i class="material-icons pl-2"><img src="../assets/images/icon/sipaling.png" class="" width="15%"> Sipaling Hijau</i>
+				</span>
+			</a>
+			<a href="home.php?v=dashboard" style="text-decoration:none;">
+				<span class="float-element tooltip-left">
+					<i class="material-icons pl-2"><img src="../assets/images/icon/payday.png" class="" width="15%"> Payday</i>
 				</span>
 			</a>
 		</div>
@@ -427,7 +432,7 @@
 			margin: 35px 20px;
 		}
 		.floating-container:hover {
-			height: 400px;
+			height: 470px;
 		}
 		.floating-container:hover .floating-button {
 			box-shadow: 0 10px 25px rgba(44, 179, 240, 0.6);
@@ -455,6 +460,10 @@
 		.floating-container:hover .element-container .float-element:nth-child(5) {
 			-webkit-animation: come-in 0.4s forwards 1.00s;
 			animation: come-in 0.4s forwards 1.00s;
+		}
+		.floating-container:hover .element-container .float-element:nth-child(6) {
+			-webkit-animation: come-in 0.4s forwards 1.02s;
+			animation: come-in 0.4s forwards 1.02s;
 		}
 		.floating-container .floating-button {
 			position: absolute;
@@ -508,6 +517,9 @@
 			background: #2cb3f0c7;
 		}
 		.floating-container .float-element:nth-child(5) {
+			background: #2cb3f0c7;
+		}
+		.floating-container .float-element:nth-child(6) {
 			background: #2cb3f0c7;
 		}
 	</style> 
