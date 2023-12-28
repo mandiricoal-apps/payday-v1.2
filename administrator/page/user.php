@@ -2,19 +2,53 @@
 <div class="grid-margin stretch-card mt-3 animate__animated animate__pulse">
   <div class="card round">
     <div class="card-body round">
-     <h4 class="round"><a href="home.php?v=dashboard"><img src="../assets/images/icon/broken/arrow-left.svg" alt="profile" /></a> Document Approval</h4>
+     <h4 class="round"><a href="home.php?v=dashboard"><img src="../assets/images/icon/broken/arrow-left.svg"  width="20px" /></a> Data User</h4>
+     <br>
+     <h5>User Summary</h5>
      <hr>
      <div class="row mb-3">
+      <div class="col-lg-3 col-md-12 col-sm-12 pb-2">
+        <a href="#" style="text-decoration: none;color: #343a40;">
+          <div class="card round">
+            <div class="card-body">
+              <div class="d-flex">
+                <div class="p-2">
+                  <h6><img src="../assets/images/icon/broken/user.svg"  width="20px" /> Total User</h6>
+                </div>
+                <div class="ml-auto p-2">
+                  <h6>50</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-lg-3 col-md-12 col-sm-12 pb-2">
+        <a href="#" style="text-decoration: none;color: #343a40;">
+          <div class="card round">
+            <div class="card-body">
+              <div class="d-flex">
+                <div class="p-2">
+                  <h6><img src="../assets/images/icon/broken/user.svg"  width="20px" /> User New (Sep)</h6>
+                </div>
+                <div class="ml-auto p-2">
+                  <h6>50</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
       <div class="col-lg-3 col-md-12 col-sm-12 pb-2">
         <a href="#" style="text-decoration: none;color: #343a40;">
           <div class="card round" style="background-color: #e3ffee;">
             <div class="card-body">
               <div class="d-flex">
                 <div class="p-2">
-                  <h5><img src="../assets/images/icon/broken/document.svg" alt="profile" /> Signed</h5>
+                  <h6><img src="../assets/images/icon/broken/user.svg"  width="20px" /> User Active</h6>
                 </div>
                 <div class="ml-auto p-2">
-                  <h5><img src="../assets/images/icon/broken/arrow-right.svg" alt="profile" /></h5>
+                  <h6>50</h6>
                 </div>
               </div>
             </div>
@@ -27,10 +61,10 @@
             <div class="card-body">
               <div class="d-flex">
                 <div class="p-2">
-                  <h5><img src="../assets/images/icon/broken/document-download.svg" alt="profile" /> Template</h5>
+                  <h6><img src="../assets/images/icon/broken/user.svg"  width="20px" /> User Inactive</h6>
                 </div>
                 <div class="ml-auto p-2">
-                  <h5><img src="../assets/images/icon/broken/arrow-right.svg" alt="profile" /></h5>
+                  <h6>50</h6>
                 </div>
               </div>
             </div>
@@ -39,14 +73,14 @@
       </div>
     </div>
 
-    <h5>Document Approval History <small>( Last 1 month )</small></h5>
+    <h5>User List</h5>
     <hr>
     <div class="table-responsive p-3">
       <div class="row justify-content-between">
-        <div class="col-lg-2 col-md-6 col-sm-12 align-self-end">
-          <button class="form-control btn btn-sm btn-success round mb-3">+ Add</button>
+        <div class="col-lg-2 col-md-6 col-sm-12 align-self-end  mb-3">
+          <button class="form-control btn btn-sm btn-outline-primary round"><img src="../assets/images/icon/sap.svg" width="25px"/> Synchronize</button>
+          <center><small class=""><i><b>Latest :</b> 12-12-2023 08:00</i></small></center>
         </div>
-
         <div class="col-lg-6 col-md-6 col-sm-12">
           <form method="POST">
             <div class="row">
@@ -69,18 +103,18 @@
         <thead>
           <tr>
             <th>Name</th>
-            <th>Date</th>
-            <th>Category</th>
-            <th>Leave Date</th>
+            <th>Company</th>
+            <th>Divisi</th>
+            <th>Last Login</th>
             <th>Actions</th>
           </tr>
         </thead>
         <tfoot>
           <tr>
             <th>Name</th>
-            <th>Date</th>
-            <th>Category</th>
-            <th>Leave Date</th>
+            <th>Company</th>
+            <th>Divisi</th>
+            <th>Last Login</th>
             <th>Actions</th>
           </tr>
         </tfoot>
@@ -98,12 +132,12 @@
     .appendTo('#datatables tfoot');
 
     var table = $('#datatables').DataTable({
-      ajax: 'dataset/leave.json', //get data from json
+      ajax: 'dataset/user.json', //get data from json
       orderCellsBottom: true,
       fixedHeader: true,
       order: [
-      [1, 'desc']
-      ],
+        [1, 'desc']
+        ],
       initComplete: function() {
         var api = this.api();
         api
@@ -114,7 +148,7 @@
             $(api.column(colIdx).header()).index()
             );
           var title = $(cell).text();
-          $(cell).html('<input type="text" placeholder=" search by ' + title + '" />');
+          $(cell).html('<input type="text" placeholder=" search by ' + title + '" width="20px" />');
           $(
             'input',
             $('.filters th').eq($(api.column(colIdx).header()).index())

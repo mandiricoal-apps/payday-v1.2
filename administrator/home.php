@@ -80,18 +80,18 @@
 						</a>
 					</li>
 					<li class="">
-						<span class="nav-link menu-title">Roles Managemenet</span>
+						<span class="nav-link menu-title">User Management</span>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#" aria-expanded="false" aria-controls="ui-basic" onClick="window.location='home.php?v=users'">
 							<i class="menu-icon"><img src="../assets/images/icon/linear/user.svg" class=""></i>
-							<span class="menu-title">User Roles</span>
+							<span class="menu-title">Data User</span>
 						</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#" aria-expanded="false" aria-controls="ui-basic" onClick="window.location='home.php?v=log'">
-							<i class="menu-icon"><img src="../assets/images/icon/linear/document-code.svg" class=""></i>
-							<span class="menu-title">Log Activity</span>
+						<a class="nav-link" href="#" aria-expanded="false" aria-controls="ui-basic" onClick="window.location='home.php?v=admins'">
+							<i class="menu-icon"><img src="../assets/images/icon/linear/user.svg" class=""></i>
+							<span class="menu-title">Data Admin</span>
 						</a>
 					</li>
 					<li class="">

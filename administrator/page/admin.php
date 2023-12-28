@@ -2,70 +2,13 @@
 <div class="grid-margin stretch-card mt-3 animate__animated animate__pulse">
   <div class="card round">
     <div class="card-body round">
-      <h4 class="round"><a href="home.php?v=dashboard"><img src="../assets/images/icon/broken/arrow-left.svg" alt="profile" /></a> Leave</h4>
-      <hr>
-      <div class="row mb-3">
-        <div class="col-lg-3 col-md-12 col-sm-12 pb-2">
-          <a href="#" style="text-decoration: none;color: #343a40;">
-            <div class="card round" style="background-color: #e3ffee;">
-              <div class="card-body">
-                <div class="d-flex">
-                  <div class="p-2">
-                    <h4>10</h4>
-                    <p class="card-text">Sisa Cuti Tahunan</p>
-                  </div>
-                  <div class="ml-auto p-2">
-                    <h5><img src="../assets/images/icon/broken/info-circle.svg" alt="profile" /></h5>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-3 col-md-12 col-sm-12 pb-2">
-          <a href="#" style="text-decoration: none;color: #343a40;">
-            <div class="card round" style="background-color: #ffe2e2;">
-              <div class="card-body">
-                <div class="d-flex">
-                  <div class="p-2">
-                    <h4>2</h4>
-                    <p class="card-text">Sisa Cuti Dinas</p>
-                  </div>
-                  <div class="ml-auto p-2">
-                    <h5><img src="../assets/images/icon/broken/info-circle.svg" alt="profile" /></h5>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-3 col-md-12 col-sm-12 pb-2">
-          <a href="#" style="text-decoration: none;color: #343a40;">
-            <div class="card round">
-              <div class="card-body">
-                <div class="d-flex">
-                  <div class="p-2">
-                    <h4>2</h4>
-                    <p class="card-text">Total Cuti</p>
-                  </div>
-                  <div class="ml-auto p-2">
-                    <h5><img src="../assets/images/icon/broken/info-circle.svg" alt="profile" /></h5>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-
-      <h5>Leave History</h5>
+      <h4 class="round"><a href="home.php?v=dashboard"><img src="../assets/images/icon/broken/arrow-left.svg"  width="20px" /></a> Roles Management</h4>
       <hr>
       <div class="table-responsive p-3">
         <div class="row justify-content-between">
-          <div class="col-lg-2 col-md-6 col-sm-12 align-self-end">
-            <button class="form-control btn btn-sm btn-success round mb-3">+ Add</button>
+          <div class="col-lg-2 col-md-6 col-sm-12 align-self-end  mb-3">
+            <button class="form-control btn btn-sm btn-success round">+ Add</button>
           </div>
-
           <div class="col-lg-6 col-md-6 col-sm-12">
             <form method="POST">
               <div class="row">
@@ -87,19 +30,17 @@
         <table id="datatables" class="table table-striped" style="width:100%">
           <thead>
             <tr>
+              <th>Status</th>
               <th>Name</th>
-              <th>Date</th>
-              <th>Category</th>
-              <th>Leave Date</th>
+              <th>Company</th>
               <th>Actions</th>
             </tr>
           </thead>
           <tfoot>
             <tr>
+              <th>Status</th>
               <th>Name</th>
-              <th>Date</th>
-              <th>Category</th>
-              <th>Leave Date</th>
+              <th>Company</th>
               <th>Actions</th>
             </tr>
           </tfoot>
@@ -117,12 +58,12 @@
     .appendTo('#datatables tfoot');
 
     var table = $('#datatables').DataTable({
-      ajax: 'dataset/leave.json', //get data from json
+      ajax: 'dataset/admin.json', //get data from json
       orderCellsBottom: true,
       fixedHeader: true,
       order: [
-      [1, 'desc']
-      ],
+        [1, 'desc']
+        ],
       initComplete: function() {
         var api = this.api();
         api
@@ -133,7 +74,7 @@
             $(api.column(colIdx).header()).index()
             );
           var title = $(cell).text();
-          $(cell).html('<input type="text" placeholder=" search by ' + title + '" />');
+          $(cell).html('<input type="text" placeholder=" search by ' + title + '" width="20px" />');
           $(
             'input',
             $('.filters th').eq($(api.column(colIdx).header()).index())

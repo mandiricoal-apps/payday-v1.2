@@ -1,0 +1,28 @@
+{
+  "data": [
+    [
+      "",
+      "<b>Super Admin</b><br>USERID : superadmin",
+      "ALLCO",
+      "<div class='btn-group btn-sm' role='group' aria-label='Basic example'><a class='p-1 btn btn-outline-secondary btn-sm' title='Reset Password'>&emsp;Reset Password&emsp;</a></div>"
+    ],
+    [
+      "",
+      "<b>Admin MIP</b><br>USERID : adminmip",
+      "MIP",
+      "<div class='btn-group btn-sm' role='group' aria-label='Basic example'><a class='p-1 btn btn-outline-secondary btn-sm' title='Reset Password'>&emsp;Reset Password&emsp;</a></div>"
+    ],
+    [
+      "",
+      "<b>Admin MHA</b><br>USERID : adminmha",
+      "MHA",
+      "<div class='btn-group btn-sm' role='group' aria-label='Basic example'><a class='p-1 btn btn-outline-secondary btn-sm' title='Reset Password'>&emsp;Reset Password&emsp;</a></div>"
+    ],
+    [
+      "",
+      "<b>Admin MKP</b><br>USERID : adminmkp",
+      "MKP",
+      "<div class='btn-group btn-sm' role='group' aria-label='Basic example'><a class='p-1 btn btn-outline-secondary btn-sm' title='Reset Password'>&emsp;Reset Password&emsp;</a></div>"
+    ]
+  ]
+}

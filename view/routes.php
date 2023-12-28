@@ -12,6 +12,5 @@ $page = $_GET['v'] ?? '';
 if (array_key_exists($page, $pages)) {
 	include $pages[$page];
 } else {
-	echo "<br><br><br><p style='font-family: Courier New; font-size: 16px; text-align: center;'>Page under <b>maintenance</b> !</p>
-";
+	echo "<br><br><br><p style='font-family: Courier New; font-size: 16px; text-align: center;'>Page under <b>maintenance</b> !</p>";
 }
