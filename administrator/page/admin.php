@@ -2,7 +2,7 @@
 <div class="grid-margin stretch-card mt-3 animate__animated animate__pulse">
   <div class="card round">
     <div class="card-body round">
-      <h4 class="round"><a href="home.php?v=dashboard"><img src="../assets/images/icon/broken/arrow-left.svg"  width="20px" /></a> Roles Management</h4>
+      <h4 class="round"><a href="home.php?v=dashboard"><img src="../assets/images/icon/linear/arrow-left-2.svg"  width="25px" /></a> Data Admin</h4>
       <hr>
       <div class="table-responsive p-3">
         <div class="row justify-content-between">
@@ -62,8 +62,8 @@
       orderCellsBottom: true,
       fixedHeader: true,
       order: [
-        [1, 'desc']
-        ],
+      [1, 'desc']
+      ],
       initComplete: function() {
         var api = this.api();
         api

@@ -2,7 +2,7 @@
 <div class="grid-margin stretch-card mt-3 animate__animated animate__pulse">
   <div class="card round">
     <div class="card-body round">
-     <h4 class="round"><a href="home.php?v=dashboard"><img src="../assets/images/icon/broken/arrow-left.svg"  width="20px" /></a> Data User</h4>
+      <h4 class="round"><a href="home.php?v=dashboard"><img src="../assets/images/icon/linear/arrow-left-2.svg" width="25px"/></a> Data User</h4>
      <br>
      <h5>User Summary</h5>
      <hr>
@@ -13,7 +13,7 @@
             <div class="card-body">
               <div class="d-flex">
                 <div class="p-2">
-                  <h6><img src="../assets/images/icon/broken/user.svg"  width="20px" /> Total User</h6>
+                  <h6><img src="../assets/images/icon/linear/people.svg"  width="20px" /> Total User</h6>
                 </div>
                 <div class="ml-auto p-2">
                   <h6>50</h6>
@@ -29,7 +29,7 @@
             <div class="card-body">
               <div class="d-flex">
                 <div class="p-2">
-                  <h6><img src="../assets/images/icon/broken/user.svg"  width="20px" /> User New (Sep)</h6>
+                  <h6><img src="../assets/images/icon/linear/people.svg"  width="20px" /> User New (Sep)</h6>
                 </div>
                 <div class="ml-auto p-2">
                   <h6>50</h6>
@@ -45,7 +45,7 @@
             <div class="card-body">
               <div class="d-flex">
                 <div class="p-2">
-                  <h6><img src="../assets/images/icon/broken/user.svg"  width="20px" /> User Active</h6>
+                  <h6><img src="../assets/images/icon/linear/people.svg"  width="20px" /> User Active</h6>
                 </div>
                 <div class="ml-auto p-2">
                   <h6>50</h6>
@@ -61,7 +61,7 @@
             <div class="card-body">
               <div class="d-flex">
                 <div class="p-2">
-                  <h6><img src="../assets/images/icon/broken/user.svg"  width="20px" /> User Inactive</h6>
+                  <h6><img src="../assets/images/icon/linear/people.svg"  width="20px" /> User Inactive</h6>
                 </div>
                 <div class="ml-auto p-2">
                   <h6>50</h6>
@@ -136,8 +136,8 @@
       orderCellsBottom: true,
       fixedHeader: true,
       order: [
-        [1, 'desc']
-        ],
+      [1, 'desc']
+      ],
       initComplete: function() {
         var api = this.api();
         api

@@ -1,25 +1,25 @@
 {
   "data": [
     [
-      "",
+      "<label class='switch'><input type='checkbox' checked><span class='slider round'></span></label> <b>Active</b>",
       "<b>Super Admin</b><br>USERID : superadmin",
       "ALLCO",
       "<div class='btn-group btn-sm' role='group' aria-label='Basic example'><a class='p-1 btn btn-outline-secondary btn-sm' title='Reset Password'>&emsp;Reset Password&emsp;</a></div>"
     ],
     [
-      "",
+      "<label class='switch'><input type='checkbox' checked><span class='slider round'></span></label>",
       "<b>Admin MIP</b><br>USERID : adminmip",
       "MIP",
       "<div class='btn-group btn-sm' role='group' aria-label='Basic example'><a class='p-1 btn btn-outline-secondary btn-sm' title='Reset Password'>&emsp;Reset Password&emsp;</a></div>"
     ],
     [
-      "",
+      "<label class='switch'><input type='checkbox' checked><span class='slider round'></span></label>",
       "<b>Admin MHA</b><br>USERID : adminmha",
       "MHA",
       "<div class='btn-group btn-sm' role='group' aria-label='Basic example'><a class='p-1 btn btn-outline-secondary btn-sm' title='Reset Password'>&emsp;Reset Password&emsp;</a></div>"
     ],
     [
-      "",
+      "<label class='switch'><input type='checkbox' checked><span class='slider round'></span></label>",
       "<b>Admin MKP</b><br>USERID : adminmkp",
       "MKP",
       "<div class='btn-group btn-sm' role='group' aria-label='Basic example'><a class='p-1 btn btn-outline-secondary btn-sm' title='Reset Password'>&emsp;Reset Password&emsp;</a></div>"
