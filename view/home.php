@@ -34,12 +34,12 @@
 				<a class="navbar-brand brand-logo-mini ml-2 animate__animated animate__jello" href="home.php?v=dashboard"><img src="../assets/images/logo-mini.png">
 				</a>
 			</div>
-			<div style="background: #99d4f6;" class="navbar-menu-wrapper d-flex align-items-center justify-content-end mcolor">
+			<div style="background: #99d4f6;" class="navbar-menu-wrapper d-flex align-items-center justify-content-end mcolor pr-2">
 				<button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize"></button>
 				<ul class="navbar-nav navbar-nav-right">
 					<li class="nav-item dropdown">
 						<a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown">
-							<img src="../assets/images/icon/linear/notification.svg" alt="profile" class="" />
+							<img src="../assets/images/icon/linear/notification.svg" class="" />
 						</a>
 						<div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
 							<p class="mb-0 font-weight-normal float-left dropdown-header">Notifications</p>
@@ -60,7 +60,7 @@
 					</li>
 					<li class="nav-item dropdown mr-2 ml-1">
 						<a class="nav-link count-indicator dropdown-toggle" id="logout"  onclick="logout()" href="" data-toggle="dropdown">
-							<img src="../assets/images/icon/linear/logout.svg" alt="profile" class="" />
+							<img src="../assets/images/icon/linear/logout.svg" class="" />
 						</a>
 					</li>
 				</ul>
@@ -71,11 +71,17 @@
 		<div class="container-fluid page-body-wrapper">
 			<nav class="sidebar sidebar-offcanvas animate__animated animate__fadeInLeft" id="hidebar_sidebar">
 				<ul class="nav">
-					<li class="nav-item">
+					<style>
+						.sidebar .nav .nav-item.active > .nav-link {
+							background: #99d4f6;
+							position: relative;
+						}
+					</style>
+					<!-- <li class="nav-item ml-3">
 						<img src="https://img.freepik.com/premium-vector/young-smiling-man-adam-avatar-3d-vector-people-character-illustration-cartoon-minimal-style_365941-687.jpg" width="120px">
-					</li>
+					</li> -->
 					<li class="nav-item">
-						<a class="nav-link active" aria-expanded="false" aria-controls="ui-basic" href="#" onClick="window.location='home.php?v=dashboard'">
+						<a class="nav-link" aria-expanded="false" aria-controls="ui-basic" href="#" onClick="window.location='home.php?v=dashboard'">
 							<i class="menu-icon"><img src="../assets/images/icon/linear/chart-21.svg" class=""></i>
 							<span class="menu-title">Dashboard</span>
 						</a>
@@ -105,6 +111,12 @@
 						<a class="nav-link" aria-expanded="false" aria-controls="ui-basic" href="#" onClick="window.location='home.php?v=leave'">
 							<i class="menu-icon"><img src="../assets/images/icon/linear/airplane.svg" class=""></i>
 							<span class="menu-title">Leave</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" aria-expanded="false" aria-controls="ui-basic" href="#" onClick="window.location='home.php?v=leave'">
+							<i class="menu-icon"><img src="../assets/images/icon/linear/health.svg" class=""></i>
+							<span class="menu-title">Medical</span>
 						</a>
 					</li><br>
 
@@ -139,6 +151,35 @@
 
 					<li class="">
 						<hr>
+						<span class="nav-link menu-title">Menu Admin</span>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" aria-expanded="false" aria-controls="ui-basic" href="#" onClick="window.location='home.php?v=mroles'">
+							<i class="menu-icon"><img src="../assets/images/icon/linear/user.svg" class=""></i>
+							<span class="menu-title">Roles Management 
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" aria-expanded="false" aria-controls="ui-basic" href="#" onClick="window.location='home.php?v=mdocument'">
+								<i class="menu-icon"><img src="../assets/images/icon/linear/document-text.svg" class=""></i>
+								<span class="menu-title">Document Approval
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" aria-expanded="false" aria-controls="ui-basic" href="#" onClick="window.location='home.php?v=minfo'">
+									<i class="menu-icon"><img src="../assets/images/icon/linear/document-text.svg" class=""></i>
+									<span class="menu-title">Information Update
+									</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" aria-expanded="false" aria-controls="ui-basic" href="#" onClick="window.location='home.php?v=mreport'">
+										<i class="menu-icon"><img src="../assets/images/icon/linear/chart-1.svg" class=""></i>
+										<span class="menu-title">Report 
+										</a>
+									</li>
+
+					<!-- <li class="">
+						<hr>
 						<span class="nav-link menu-title">Account</span>
 					</li>
 					<li class="nav-item">
@@ -152,7 +193,7 @@
 							<i class="menu-icon"><img src="../assets/images/icon/linear/logout.svg" class=""></i>
 							<span class="menu-title">Sign Out</span>
 						</a>
-					</li>
+					</li> -->
 				</ul>
 			</nav>
 
@@ -245,6 +286,10 @@
 			}
 
 			#hidebar_sidebar {
+				display: none;
+			}
+
+			#sidebarx {
 				display: none;
 			}
 		}

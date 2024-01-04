@@ -1,5 +1,5 @@
 <div class="row">
-	<div class="col">
+	<div class="col-lg-6 col-12">
 		<div class="content">
 			<div class="col-md-12 mb-1 animate__animated animate__pulse">
 				<h5 class="font-weight-bold">
@@ -139,7 +139,7 @@
 		</div>
 
 
-		<div class="col animate__animated animate__pulse">
+		<div class="col-lg-5 col-12 animate__animated animate__pulse">
 			<!-- WEATHER -->
 			<div style="padding: 3.5rem 0rem 0rem 0rem; " class="content-wrapper white">
 				<a class="weatherwidget-io round" href="https://forecast7.com/en/n6d26106d81/south-jakarta/" data-label_1="JAKARTA SELATAN" data-label_2="WEATHER" data-theme="original">JAKARTA SELATAN WEATHER</a>
@@ -162,13 +162,13 @@
 				<script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js" async>
 					{
 						"symbols": [
-							[
-								"IDX:MCOL|1D"
-								],
-							[
-								"IDX:MAHA|1D"
-								]
-							],
+						[
+						"IDX:MCOL|1D"
+						],
+						[
+						"IDX:MAHA|1D"
+						]
+						],
 						"chartOnly": false,
 						"width": "100%",
 						"height": "100%",
@@ -194,13 +194,13 @@
 						"lineWidth": 2,
 						"lineType": 0,
 						"dateRanges": [
-							"1d|1",
-							"1m|30",
-							"3m|60",
-							"12m|1D",
-							"60m|1W",
-							"all|1M"
-							],
+						"1d|1",
+						"1m|30",
+						"3m|60",
+						"12m|1D",
+						"60m|1W",
+						"all|1M"
+						],
 						"upColor": "#22ab94",
 						"downColor": "#f7525f",
 						"borderUpColor": "#22ab94",
@@ -338,7 +338,59 @@
 		</div>
 	</div>
 
-	<div class="floating-container" id="hidebar">
+	<div id="sidebarx" class="sidebarx animate__animated animate__fadeInRight">
+		<!-- Sidebar menu di sini -->
+		<ul class="mt-5 pt-3">
+			<li class="pb-2 text-center"><a href="#">Apps :</a></li>
+			<li class="pb-3 text-center"><a href="#"><img src="../assets/images/icon/optimals.png" class="sidebar-img" width="40px"></a></li>
+			<li class="pb-3 text-center"><a href="#"><img src="../assets/images/icon/sisakty.png" class="sidebar-img" width="40px"></a></li>
+			<li class="pb-3 text-center"><a href="#"><img src="../assets/images/icon/medicoal.png" class="sidebar-img" width="40px"></a></li>
+			<li class="pb-3 text-center"><a href="#"><img src="../assets/images/icon/siaga.png" class="sidebar-img" width="40px"></a></li>
+			<li class="pb-3 text-center"><a href="#"><img src="../assets/images/icon/sipaling.png" class="sidebar-img" width="40px"></a></li>
+			<!-- Tambahkan menu sesuai kebutuhan -->
+		</ul>
+	</div>
+	<style>
+		.sidebarx {
+			position: fixed;
+			top: 0;
+			right: 0;
+			height: 100%;
+			width: 70px;
+			background-color: rgb(153 212 246 / 19%);
+			overflow-y: auto;
+		}
+
+		.sidebarx ul {
+			list-style: none;
+			padding: 0;
+		}
+
+		.sidebarx li {
+			padding: 10px;
+		}
+
+		.sidebarx a {
+			text-decoration: none;
+			color: #333;
+			font-weight: bold;
+		}
+
+		.sidebarx a:hover {
+			color: #ff0000;
+		}
+
+		.sidebar-img {
+			transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
+		}
+
+		.sidebar-img:hover {
+			transform: scale(1.2); /* Increase the size of the image on hover */
+		}
+	</style>
+
+
+<!-- 	<div class="floating-container" id="hidebar">
 		<div class="floating-button">
 			<img src="../assets/images/icon/bulk/grid-6.svg">
 		</div>
@@ -374,7 +426,7 @@
 				</span>
 			</a>
 		</div>
-	</div> 
+	</div>  -->
 
 	<style>
 		@import url("https://fonts.googleapis.com/css?family=Roboto");

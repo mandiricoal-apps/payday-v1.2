@@ -2,7 +2,7 @@
 <div class="grid-margin stretch-card mt-3 animate__animated animate__pulse">
   <div class="card round">
     <div class="card-body round">
-      <h4 class="round"><a href="home.php?v=dashboard"><img src="../assets/images/icon/broken/arrow-left.svg" alt="profile" /></a> Leave</h4>
+      <h4 class="round"><a href="home.php?v=dashboard"><img src="../assets/images/icon/linear/arrow-left-2.svg" alt="profile" /></a> Leave</h4>
       <hr>
       <div class="row mb-3">
         <div class="col-lg-3 col-md-12 col-sm-12 pb-2">
@@ -15,7 +15,7 @@
                     <p class="card-text">Sisa Cuti Tahunan</p>
                   </div>
                   <div class="ml-auto p-2">
-                    <h5><img src="../assets/images/icon/broken/info-circle.svg" alt="profile" /></h5>
+                    <h5><img src="../assets/images/icon/linear/info-circle.svg" alt="profile" /></h5>
                   </div>
                 </div>
               </div>
@@ -32,7 +32,7 @@
                     <p class="card-text">Sisa Cuti Dinas</p>
                   </div>
                   <div class="ml-auto p-2">
-                    <h5><img src="../assets/images/icon/broken/info-circle.svg" alt="profile" /></h5>
+                    <h5><img src="../assets/images/icon/linear/info-circle.svg" alt="profile" /></h5>
                   </div>
                 </div>
               </div>
@@ -49,7 +49,7 @@
                     <p class="card-text">Total Cuti</p>
                   </div>
                   <div class="ml-auto p-2">
-                    <h5><img src="../assets/images/icon/broken/info-circle.svg" alt="profile" /></h5>
+                    <h5><img src="../assets/images/icon/linear/info-circle.svg" alt="profile" /></h5>
                   </div>
                 </div>
               </div>
@@ -117,7 +117,7 @@
     .appendTo('#datatables tfoot');
 
     var table = $('#datatables').DataTable({
-      ajax: 'dataset/leave.json', //get data from json
+      ajax: '../dataset/leave.json', //get data from json
       orderCellsBottom: true,
       fixedHeader: true,
       order: [

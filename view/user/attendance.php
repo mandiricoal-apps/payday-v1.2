@@ -2,7 +2,7 @@
 <div class="grid-margin stretch-card mt-3 animate__animated animate__pulse">
   <div class="card round">
     <div class="card-body round">
-      <h4 class="round"><a href="home.php?v=dashboard"><img src="../assets/images/icon/broken/arrow-left.svg" alt="profile" /></a> Leave</h4>
+      <h4 class="round"><a href="home.php?v=dashboard"><img src="../assets/images/icon/linear/arrow-left-2.svg"  /></a> Attendance</h4>
       <hr>
       <div class="row mb-3">
         <div class="col-sm-6" id="hidebar">
@@ -27,7 +27,7 @@
         </div>
       </div>
 
-      <h5>Leave History</h5>
+      <h5>Attendance History</h5>
       <hr>
       <div class="table-responsive p-3">
         <div class="row justify-content-between">
@@ -38,13 +38,10 @@
                 Filter : 
               </div>
               <div class="col-lg-3 col-sm-12 px-1">
-                <button class="form-control btn btn-sm btn-info round mb-3">Today</button>
-              </div>
-              <div class="col-lg-3 col-sm-12 px-1">
-                <button class="form-control btn btn-sm btn-info round mb-3">SEP</button>
+                <button class="form-control btn btn-sm btn-info round mb-3"><?=date('F')?></button>
               </div>
               <div class="col-lg-3 sm-sm-12 px-1">
-                <button class="form-control btn btn-sm btn-info round mb-3">2023</button>
+                <button class="form-control btn btn-sm btn-info round mb-3"><?=date('Y')?></button>
               </div>
             </div>
 
@@ -100,7 +97,7 @@
     .appendTo('#datatables tfoot');
 
     var table = $('#datatables').DataTable({
-      ajax: 'dataset/attendance.json', //get data from json
+      ajax: '../dataset/attendance.json', //get data from json
       orderCellsBottom: true,
       fixedHeader: true,
       order: [

@@ -1,11 +1,18 @@
 <?php
 @session_start();
 $pages = [
-	"dashboard" 	=> "page/dashboard.php",
-	"attendance" 	=> "page/attendance.php",
-	"leave" 		=> "page/leave.php",
-	"dochistory"	=> "page/document_approval_history.php",
-	"docsigned"	    => "page/document_approval_signed.php",
+	// User Page
+	"dashboard" 	=> "user/dashboard.php",
+	"attendance" 	=> "user/attendance.php",
+	"leave" 		=> "user/leave.php",
+	"dochistory"	=> "user/document_approval_history.php",
+	"docsigned"	    => "user/document_approval_signed.php",
+
+	// Admin Page
+	"mroles" 		=> "admin/roles_management.php",
+	"mdocument" 	=> "admin/document_approval.php",
+	"minfo"			=> "admin/infromation_update.php",
+	"mreport"	    => "admin/report.php",
 ];
 
 $page = $_GET['v'] ?? '';
