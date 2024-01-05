@@ -114,7 +114,7 @@
 						</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" aria-expanded="false" aria-controls="ui-basic" href="#" onClick="window.location='home.php?v=leave'">
+						<a class="nav-link" aria-expanded="false" aria-controls="ui-basic" href="#" onClick="window.location='home.php?v='">
 							<i class="menu-icon"><img src="../assets/images/icon/linear/health.svg" class=""></i>
 							<span class="menu-title">Medical</span>
 						</a>
@@ -280,6 +280,11 @@
 
 	<!-- Custom Style -->
 	<style>
+		.btn.btn-sm, .btn-group-sm > .btn, .fc .btn-group-sm > button, .ajax-upload-dragdrop .btn-group-sm > .ajax-file-upload, .swal2-modal .swal2-buttonswrapper .btn-group-sm > .swal2-styled, .wizard > .actions .btn-group-sm > a, .fc button, .ajax-upload-dragdrop .btn-sm.ajax-file-upload, .ajax-upload-dragdrop .fc button.ajax-file-upload, .fc .ajax-upload-dragdrop button.ajax-file-upload, .swal2-modal .swal2-buttonswrapper .btn-sm.swal2-styled, .swal2-modal .swal2-buttonswrapper .fc button.swal2-styled, .fc .swal2-modal .swal2-buttonswrapper button.swal2-styled, .wizard > .actions a.btn-sm {
+			font-size: 0.812rem;
+			border-radius: 15px;
+			height: auto;
+		}
 		@media (max-width: 500px) {
 			#hidebar {
 				display: none;

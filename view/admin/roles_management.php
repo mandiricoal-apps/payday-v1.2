@@ -1,6 +1,5 @@
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css">
 <div class="grid-margin stretch-card mt-3 animate__animated animate__pulse">
-  <div class="card round">
+  <div class="card border round">
     <div class="card-body round">
       <h4 class="round"><a href="home.php?v=dashboard"><img src="../assets/images/icon/linear/arrow-left-2.svg" width="25px"/></a> Data User</h4>
       <br>
@@ -9,14 +8,15 @@
       <div class="row mb-3">
         <div class="col-lg-3 col-md-12 col-sm-12 pb-2">
           <a href="#" style="text-decoration: none;color: #343a40;">
-            <div class="card round">
+            <div class="card border round">
               <div class="card-body">
                 <div class="d-flex">
                   <div class="p-2">
-                    <h6><img src="../assets/images/icon/linear/user.svg" width="20px" />Total</h6>
+                    <h4><b>12</b></h4>
+                    <p class="card-text">User Total</p>
                   </div>
                   <div class="ml-auto p-2">
-                    <h6>50</h6>
+                    <h5><img src="../assets/images/icon/linear/user.svg" alt="profile" /></h5>
                   </div>
                 </div>
               </div>
@@ -25,14 +25,15 @@
         </div>
         <div class="col-lg-3 col-md-12 col-sm-12 pb-2">
           <a href="#" style="text-decoration: none;color: #343a40;">
-            <div class="card round">
+            <div class="card border round">
               <div class="card-body">
                 <div class="d-flex">
                   <div class="p-2">
-                    <h6><img src="../assets/images/icon/linear/user.svg"  width="20px" />New (<?= date('F') ?>)</h6>
+                    <h4><b>21</b></h4>
+                    <p class="card-text">User New (<?= date('F')?>)</p>
                   </div>
                   <div class="ml-auto p-2">
-                    <h6>50</h6>
+                    <h5><img src="../assets/images/icon/linear/user.svg" alt="profile" /></h5>
                   </div>
                 </div>
               </div>
@@ -41,14 +42,15 @@
         </div>
         <div class="col-lg-3 col-md-12 col-sm-12 pb-2">
           <a href="#" style="text-decoration: none;color: #343a40;">
-            <div class="card round" style="background-color: #e3ffee;">
+            <div class="card border round" style="background-color: #e3ffee;">
               <div class="card-body">
                 <div class="d-flex">
                   <div class="p-2">
-                    <h6><img src="../assets/images/icon/linear/user.svg"  width="20px" />Active</h6>
+                    <h4><b>220</b></h4>
+                    <p class="card-text">User Active</p>
                   </div>
                   <div class="ml-auto p-2">
-                    <h6>50</h6>
+                    <h5><img src="../assets/images/icon/linear/user.svg" alt="profile" /></h5>
                   </div>
                 </div>
               </div>
@@ -57,14 +59,15 @@
         </div>
         <div class="col-lg-3 col-md-12 col-sm-12 pb-2">
           <a href="#" style="text-decoration: none;color: #343a40;">
-            <div class="card round" style="background-color: #ffe2e2;">
+            <div class="card border round" style="background-color: #ffe2e2;">
               <div class="card-body">
                 <div class="d-flex">
                   <div class="p-2">
-                    <h6><img src="../assets/images/icon/linear/user.svg"  width="20px" />Inactive</h6>
+                    <h4><b>2</b></h4>
+                    <p class="card-text">User Inactive</p>
                   </div>
                   <div class="ml-auto p-2">
-                    <h6>50</h6>
+                    <h5><img src="../assets/images/icon/linear/user.svg" alt="profile" /></h5>
                   </div>
                 </div>
               </div>
@@ -78,7 +81,7 @@
       <div class="table-responsive p-3">
         <div class="row justify-content-between">
           <div class="col-lg-2 col-md-6 col-sm-12 align-self-end  mb-3">
-            <button class="form-control btn btn-sm btn-outline-primary round"><img src="../assets/images/icon/sap.svg" width="25px"/> Synchronize</button>
+            <button class="form-control btn btn-sm btn-outline-info round mb-2"><img src="../assets/images/icon/sap.svg" width="25px"/> Synchronize</button>
             <center><small class=""><i><b>Latest :</b> 12-12-2023 08:00</i></small></center>
           </div>
           <div class="col-lg-6 col-md-6 col-sm-12">
@@ -91,7 +94,7 @@
                   <input class="form-control form-control-sm mb-2" type="date" placeholder="to" required>
                 </div>
                 <div class="col-lg-4 col-md-12">
-                  <button class="form-control btn-sm btn btn-primary mb-3" type="submit">Search</button>
+                  <button class="form-control btn-sm btn btn-info mb-3" type="submit">Search</button>
                 </div>
                 <hr>
               </div>
@@ -137,25 +140,35 @@
       </div>
       <div class="modal-body pt-2">
         <h5 class="modal-title pb-2">Personal Information</h5>
-        <div class="row">
-          <div class="col-4"><b>NIK</b></div>
-          <div class="col-8">:&emsp;3839</div>
-          <div class="w-100"></div>
-          <div class="col-4"><b>Name</b></div>
-          <div class="col-8">:&emsp;Andika Debi Putra</div>
-          <div class="w-100"></div>
-          <div class="col-4"><b>Jabatan</b></div>
-          <div class="col-8">:&emsp;Supervisor</div>
-          <div class="w-100"></div>
-          <div class="col-4"><b>Departement</b></div>
-          <div class="col-8">:&emsp;Software Engineer</div>
-          <div class="w-100"></div>
-          <div class="col-4"><b>Divisi</b></div>
-          <div class="col-8">:&emsp;ITE</div>
-          <div class="w-100"></div>
-          <div class="col-4"><b>Company</b></div>
-          <div class="col-8">:&emsp;MIP</div>
-        </div><br>
+        <table class="table table-sm table-borderless">
+          <tbody>
+            <tr>
+              <td scope="row"><b>NIK</b></td>
+              <td>: 3839</td>
+            </tr>
+            <tr>
+              <td scope="row"><b>Name</b></td>
+              <td>:&emsp;Andika Debi Putra</td>
+            </tr>
+            <tr>
+              <td scope="row"><b>Jabatan</b></td>
+              <td>:&emsp; Supervisor</td>
+            </tr>
+            <tr>
+              <td scope="row"><b>Department</b></td>
+              <td>:&emsp; Software Engineering</td>
+            </tr>
+            <tr>
+              <td scope="row"><b>Divisi</b></td>
+              <td>:&emsp; ITE</td>
+            </tr>
+            <tr>
+              <td scope="row"><b>Company</b></td>
+              <td>:&emsp; MIP</td>
+            </tr>
+          </tbody>
+        </table><br>
+
         <h5 class="modal-title pb-2">Authorization</h5>
         <table class="table table-sm table-bordered">
           <thead>
@@ -182,7 +195,7 @@
               <td></td>
             </tr>
           </tbody>
-        </table>
+        </table><br>
         <small><i><b>Update by :</b> Admin MIP, at 12-12-2020 08:00</i></small>
       </div>
     </div>
@@ -251,8 +264,8 @@
         </table>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary round w-25" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary round w-25">Save</button>
+        <button type="button" class="btn btn-sm btn-basic border round w-25" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-sm btn-info round w-25">Save</button>
       </div>
     </div>
   </div>
@@ -270,8 +283,8 @@
       orderCellsBottom: true,
       fixedHeader: true,
       order: [
-      [1, 'desc']
-      ],
+        [1, 'desc']
+        ],
       initComplete: function() {
         var api = this.api();
         api

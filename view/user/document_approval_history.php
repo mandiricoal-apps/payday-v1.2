@@ -1,91 +1,91 @@
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css">
 <div class="grid-margin stretch-card mt-3 animate__animated animate__pulse">
-  <div class="card round">
+  <div class="card border round">
     <div class="card-body round">
-     <h4 class="round"><a href="home.php?v=dashboard"><img src="../assets/images/icon/broken/arrow-left.svg"  /></a> Document Approval</h4>
+     <h4 class="round"><a href="home.php?v=dashboard"><img src="../assets/images/icon/linear/arrow-left-2.svg"  /></a> Document Approval</h4>
      <hr>
      <div class="row mb-3">
       <div class="col-lg-3 col-md-12 col-sm-12 pb-2">
         <a href="home.php?v=docsigned" style="text-decoration: none;color: #343a40;">
-          <div class="card round" style="background-color: #e3ffee;">
+          <div class="card border round" style="background-color: #e3ffee;">
             <div class="card-body">
               <div class="d-flex">
                 <div class="p-2">
-                  <h5><img src="../assets/images/icon/broken/tick-circle.svg" /> Signed</h5>
+                  <h5>Signed</h5>
                 </div>
                 <div class="ml-auto p-2">
-                  <h5><img src="../assets/images/icon/broken/arrow-right.svg"  /></h5>
+                  <h5><img src="../assets/images/icon/linear/tick-circle.svg" /></h5>
                 </div>
               </div>
             </div>
-          </a>
-        </div>
-      </a>
-    </div>
-    <div class="col-lg-3 col-md-12 col-sm-12 pb-2">
-      <a href="#" style="text-decoration: none;color: #343a40;">
-        <div class="card round" style="background-color: #ffe2e2;">
-          <div class="card-body">
-            <div class="d-flex">
-              <div class="p-2">
-                <h5><img src="../assets/images/icon/broken/document-download.svg"  /> Template</h5>
-              </div>
-              <div class="ml-auto p-2">
-                <h5><img src="../assets/images/icon/broken/arrow-right.svg"  /></h5>
+          </div>
+        </a>
+      </div>
+      <div class="col-lg-3 col-md-12 col-sm-12 pb-2">
+        <a href="#" style="text-decoration: none;color: #343a40;">
+          <div class="card border round" style="background-color: #ffe2e2;">
+            <div class="card-body">
+              <div class="d-flex">
+                <div class="p-2">
+                  <h5>Template</h5>
+                </div>
+                <div class="ml-auto p-2">
+                  <h5><img src="../assets/images/icon/linear/document-download.svg"  /></h5>
+                </div>
               </div>
             </div>
           </div>
+        </a>
+      </div>
+    </div>
+
+    <h5>Document Approval History <small>( Last 1 month )</small></h5>
+    <hr>
+    <div class="table-responsive p-3">
+      <div class="row justify-content-between">
+        <div class="col-lg-2 col-md-6 col-sm-12 align-self-end">
+          <button class="form-control btn btn-sm btn-success round mb-3">+ Add</button>
         </div>
-      </a>
-    </div>
-  </div>
 
-  <h5>Document Approval History <small>( Last 1 month )</small></h5>
-  <hr>
-  <div class="table-responsive p-3">
-    <div class="row justify-content-between">
-      <div class="col-lg-2 col-md-6 col-sm-12 align-self-end">
-        <button class="form-control btn btn-sm btn-success round mb-3">+ Add</button>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <form method="POST">
+            <div class="row">
+              <div class="col-lg-4 col-md-12 px-1">
+                <input class="form-control form-control-sm mb-2" type="date" placeholder="from" required>
+              </div>
+              <div class="col-lg-4 col-md-12 px-1">
+                <input class="form-control form-control-sm mb-2" type="date" placeholder="to" required>
+              </div>
+              <div class="col-lg-4 col-md-12">
+                <button class="form-control btn-sm btn btn-info mb-3" type="submit">Search</button>
+              </div>
+              <hr>
+            </div>
+          </form>
+        </div>
       </div>
 
-      <div class="col-lg-6 col-md-6 col-sm-12">
-        <form method="POST">
-          <div class="row">
-            <div class="col-lg-4 col-md-12 px-1">
-              <input class="form-control form-control-sm mb-2" type="date" placeholder="from" required>
-            </div>
-            <div class="col-lg-4 col-md-12 px-1">
-              <input class="form-control form-control-sm mb-2" type="date" placeholder="to" required>
-            </div>
-            <div class="col-lg-4 col-md-12">
-              <button class="form-control btn-sm btn btn-primary mb-3" type="submit">Search</button>
-            </div>
-            <hr>
-          </div>
-        </form>
+      <div class="table-responsive">
+        <table id="datatables" class="table table-striped" style="width:100%">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Document Type</th>
+              <th>Share With</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tfoot>
+            <tr>
+              <th>Date</th>
+              <th>Document Type</th>
+              <th>Share With</th>
+              <th>Actions</th>
+            </tr>
+          </tfoot>
+        </table>
       </div>
     </div>
-
-    <table id="datatables" class="table table-striped" style="width:100%">
-      <thead>
-        <tr>
-          <th>Date</th>
-          <th>Document Type</th>
-          <th>Share With</th>
-          <th>Actions</th>
-        </tr>
-      </thead>
-      <tfoot>
-        <tr>
-          <th>Date</th>
-          <th>Document Type</th>
-          <th>Share With</th>
-          <th>Actions</th>
-        </tr>
-      </tfoot>
-    </table>
   </div>
-</div>
 </div>
 </div>
 
@@ -97,11 +97,7 @@
     .appendTo('#datatables tfoot');
 
     var table = $('#datatables').DataTable({
-      ajax: 'dataset/document_approval_history.json', //get data from json
-
-
-
-
+      ajax: '../dataset/document_approval_history.json',
       orderCellsBottom: true,
       fixedHeader: true,
       order: [

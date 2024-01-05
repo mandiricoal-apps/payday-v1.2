@@ -1,12 +1,11 @@
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css">
 <div class="grid-margin stretch-card mt-3 animate__animated animate__pulse">
-  <div class="card round">
+  <div class="card border round">
     <div class="card-body round">
       <h4 class="round"><a href="home.php?v=dashboard"><img src="../assets/images/icon/linear/arrow-left-2.svg"  /></a> Attendance</h4>
       <hr>
       <div class="row mb-3">
-        <div class="col-sm-6" id="hidebar">
-          <div class="card round">
+        <div class="col-sm-6">
+          <div class="card border round">
             <div class="card-body">
               <h6 class="card-title"><?= date('l') ?>, <?= date('d F Y') ?></h6>
               <div class="row">
@@ -34,17 +33,16 @@
           <div class="col-lg-6 col-md-6 col-sm-12">
 
             <div class="row d-flex">
-              <div class="col-auto">
+              <div class="col-auto mt-1 mb-2">
                 Filter : 
               </div>
               <div class="col-lg-3 col-sm-12 px-1">
-                <button class="form-control btn btn-sm btn-info round mb-3"><?=date('F')?></button>
+                <button class="form-control btn btn-sm btn-primary round mb-3"><?=date('F')?></button>
               </div>
               <div class="col-lg-3 sm-sm-12 px-1">
-                <button class="form-control btn btn-sm btn-info round mb-3"><?=date('Y')?></button>
+                <button class="form-control btn btn-sm btn-primary round mb-3"><?=date('Y')?></button>
               </div>
             </div>
-
           </div>
 
           <div class="col-lg-6 col-md-6 col-sm-12">
@@ -57,33 +55,35 @@
                   <input class="form-control form-control-sm mb-2" type="date" placeholder="to" required>
                 </div>
                 <div class="col-lg-4 col-md-12">
-                  <button class="form-control btn-sm btn btn-primary mb-3" type="submit">Search</button>
+                  <button class="form-control btn-sm btn btn-info mb-3" type="submit">Search</button>
                 </div>
                 <hr>
               </div>
             </form>
           </div>
         </div>
-        <table id="datatables" class="table table-striped" style="width:100%">
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Date</th>
-              <th>Clock IN</th>
-              <th>Clock Out</th>
-              <th>Work Time</th>
-            </tr>
-          </thead>
-          <tfoot>
-            <tr>
-              <th>Name</th>
-              <th>Date</th>
-              <th>Clock IN</th>
-              <th>Clock Out</th>
-              <th>Work Time</th>
-            </tr>
-          </tfoot>
-        </table>
+        <div class="table-responsive">
+          <table id="datatables" class="table table-striped" style="width:100%">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Date</th>
+                <th>Clock IN</th>
+                <th>Clock Out</th>
+                <th>Work Time</th>
+              </tr>
+            </thead>
+            <tfoot>
+              <tr>
+                <th>Name</th>
+                <th>Date</th>
+                <th>Clock IN</th>
+                <th>Clock Out</th>
+                <th>Work Time</th>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
       </div>
     </div>
   </div>
@@ -101,8 +101,8 @@
       orderCellsBottom: true,
       fixedHeader: true,
       order: [
-      [1, 'desc']
-      ],
+        [1, 'desc']
+        ],
       initComplete: function() {
         var api = this.api();
         api

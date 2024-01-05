@@ -1,17 +1,33 @@
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css">
 <div class="grid-margin stretch-card mt-3 animate__animated animate__pulse">
-  <div class="card round">
+  <div class="card border round">
     <div class="card-body round">
       <h4 class="round"><a href="home.php?v=dashboard"><img src="../assets/images/icon/linear/arrow-left-2.svg" alt="profile" /></a> Leave</h4>
       <hr>
       <div class="row mb-3">
         <div class="col-lg-3 col-md-12 col-sm-12 pb-2">
           <a href="#" style="text-decoration: none;color: #343a40;">
-            <div class="card round" style="background-color: #e3ffee;">
+            <div class="card border round">
               <div class="card-body">
                 <div class="d-flex">
                   <div class="p-2">
-                    <h4>10</h4>
+                    <h4><b>14</b></h4>
+                    <p class="card-text">Total</p>
+                  </div>
+                  <div class="ml-auto p-2">
+                    <h5><img src="../assets/images/icon/linear/info-circle.svg" alt="profile" /></h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-12 col-sm-12 pb-2">
+          <a href="#" style="text-decoration: none;color: #343a40;">
+            <div class="card border round" style="background-color: #e3ffee;">
+              <div class="card-body">
+                <div class="d-flex">
+                  <div class="p-2">
+                    <h4><b>12</b></h4>
                     <p class="card-text">Sisa Cuti Tahunan</p>
                   </div>
                   <div class="ml-auto p-2">
@@ -24,29 +40,12 @@
         </div>
         <div class="col-lg-3 col-md-12 col-sm-12 pb-2">
           <a href="#" style="text-decoration: none;color: #343a40;">
-            <div class="card round" style="background-color: #ffe2e2;">
+            <div class="card border round" style="background-color: #ffe2e2;">
               <div class="card-body">
                 <div class="d-flex">
                   <div class="p-2">
-                    <h4>2</h4>
+                    <h4><b>2</b></h4>
                     <p class="card-text">Sisa Cuti Dinas</p>
-                  </div>
-                  <div class="ml-auto p-2">
-                    <h5><img src="../assets/images/icon/linear/info-circle.svg" alt="profile" /></h5>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-3 col-md-12 col-sm-12 pb-2">
-          <a href="#" style="text-decoration: none;color: #343a40;">
-            <div class="card round">
-              <div class="card-body">
-                <div class="d-flex">
-                  <div class="p-2">
-                    <h4>2</h4>
-                    <p class="card-text">Total Cuti</p>
                   </div>
                   <div class="ml-auto p-2">
                     <h5><img src="../assets/images/icon/linear/info-circle.svg" alt="profile" /></h5>
@@ -76,34 +75,35 @@
                   <input class="form-control form-control-sm mb-2" type="date" placeholder="to" required>
                 </div>
                 <div class="col-lg-4 col-md-12">
-                  <button class="form-control btn-sm btn btn-primary mb-3" type="submit">Search</button>
+                  <button class="form-control btn-sm btn btn-info mb-3" type="submit">Search</button>
                 </div>
                 <hr>
               </div>
             </form>
           </div>
         </div>
-
-        <table id="datatables" class="table table-striped" style="width:100%">
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Date</th>
-              <th>Category</th>
-              <th>Leave Date</th>
-              <th>Actions</th>
-            </tr>
-          </thead>
-          <tfoot>
-            <tr>
-              <th>Name</th>
-              <th>Date</th>
-              <th>Category</th>
-              <th>Leave Date</th>
-              <th>Actions</th>
-            </tr>
-          </tfoot>
-        </table>
+        <div class="table-responsive">
+          <table id="datatables" class="table table-striped" style="width:100%">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Date</th>
+                <th>Category</th>
+                <th>Leave Date</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tfoot>
+              <tr>
+                <th>Name</th>
+                <th>Date</th>
+                <th>Category</th>
+                <th>Leave Date</th>
+                <th>Actions</th>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
       </div>
     </div>
   </div>
@@ -121,8 +121,8 @@
       orderCellsBottom: true,
       fixedHeader: true,
       order: [
-      [1, 'desc']
-      ],
+        [1, 'desc']
+        ],
       initComplete: function() {
         var api = this.api();
         api

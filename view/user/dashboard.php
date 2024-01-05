@@ -68,7 +68,7 @@
 				<!-- MENU 1 -->
 				<div class="row animate__animated animate__pulse">
 					<div class="col-md-12 grid-margin stretch-card mb-4">
-						<div class="card round">
+						<div class="card border round">
 							<div style="border:1px;border-radius: 18px 18px 0px 0px;justify-content: space-between;" class="card-header"><b>Personal Information</b></div>
 							<div class="card-body"><br>
 								<div style="display: flex;flex-wrap: nowrap;" class="row justify-content-center">
@@ -162,13 +162,13 @@
 				<script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js" async>
 					{
 						"symbols": [
-						[
-						"IDX:MCOL|1D"
-						],
-						[
-						"IDX:MAHA|1D"
-						]
-						],
+							[
+								"IDX:MCOL|1D"
+								],
+							[
+								"IDX:MAHA|1D"
+								]
+							],
 						"chartOnly": false,
 						"width": "100%",
 						"height": "100%",
@@ -194,13 +194,13 @@
 						"lineWidth": 2,
 						"lineType": 0,
 						"dateRanges": [
-						"1d|1",
-						"1m|30",
-						"3m|60",
-						"12m|1D",
-						"60m|1W",
-						"all|1M"
-						],
+							"1d|1",
+							"1m|30",
+							"3m|60",
+							"12m|1D",
+							"60m|1W",
+							"all|1M"
+							],
 						"upColor": "#22ab94",
 						"downColor": "#f7525f",
 						"borderUpColor": "#22ab94",
@@ -296,7 +296,7 @@
 					<b>Title Bulletin</b><hr>
 					<p style="color: #747473;">
 					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p><br><br>
-					<button style="width: 100%;" type="button" class="btn btn-inverse-danger btn-sm" data-dismiss="modal">Close</button>
+					<button style="width: 100%;" type="button" class="btn btn-inverse-danger " data-dismiss="modal">Close</button>
 				</div>
 			</div>
 		</div>
@@ -341,7 +341,7 @@
 	<div id="sidebarx" class="sidebarx animate__animated animate__fadeInRight">
 		<!-- Sidebar menu di sini -->
 		<ul class="mt-5 pt-3">
-			<li class="pb-2 text-center"><a href="#">Apps :</a></li>
+			<li class="pb-2 text-center"><b>Apps :</b></li>
 			<li class="pb-3 text-center"><a href="#"><img src="../assets/images/icon/optimals.png" class="sidebar-img" width="40px"></a></li>
 			<li class="pb-3 text-center"><a href="#"><img src="../assets/images/icon/sisakty.png" class="sidebar-img" width="40px"></a></li>
 			<li class="pb-3 text-center"><a href="#"><img src="../assets/images/icon/medicoal.png" class="sidebar-img" width="40px"></a></li>
@@ -385,7 +385,7 @@
 		}
 
 		.sidebar-img:hover {
-			transform: scale(1.2); /* Increase the size of the image on hover */
+			transform: scale(1.5); /* Increase the size of the image on hover */
 		}
 	</style>
 

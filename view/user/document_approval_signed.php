@@ -1,20 +1,19 @@
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css">
 <div class="grid-margin stretch-card mt-3 animate__animated animate__pulse">
-  <div class="card round">
+  <div class="card border round">
     <div class="card-body round">
-     <h4 class="round"><a href="home.php?v=dashboard"><img src="../assets/images/icon/broken/arrow-left.svg" alt="profile" /></a> Document Approval</h4>
+     <h4 class="round"><a href="home.php?v=dashboard"><img src="../assets/images/icon/linear/arrow-left-2.svg" alt="profile" /></a> Document Approval</h4>
      <hr>
      <div class="row mb-3">
       <div class="col-lg-3 col-md-12 col-sm-12 pb-2">
         <a href="home.php?v=dochistory" style="text-decoration: none;color: #343a40;">
-          <div class="card round" style="background-color: #e3ffee;">
+          <div class="card border round" style="background-color: #e3ffee;">
             <div class="card-body">
               <div class="d-flex">
                 <div class="p-2">
-                  <h5><img src="../assets/images/icon/broken/document.svg" alt="profile" /> History</h5>
+                  <h5><img src="../assets/images/icon/linear/document.svg" alt="profile" /> History</h5>
                 </div>
                 <div class="ml-auto p-2">
-                  <h5><img src="../assets/images/icon/broken/arrow-right.svg" alt="profile" /></h5>
+                  <h5><img src="../assets/images/icon/linear/arrow-right.svg" alt="profile" /></h5>
                 </div>
               </div>
             </div>
@@ -23,14 +22,14 @@
       </div>
       <div class="col-lg-3 col-md-12 col-sm-12 pb-2">
         <a href="#" style="text-decoration: none;color: #343a40;">
-          <div class="card round" style="background-color: #ffe2e2;">
+          <div class="card border round" style="background-color: #ffe2e2;">
             <div class="card-body">
               <div class="d-flex">
                 <div class="p-2">
-                  <h5><img src="../assets/images/icon/broken/document-download.svg" alt="profile" /> Template</h5>
+                  <h5><img src="../assets/images/icon/linear/document-download.svg" alt="profile" /> Template</h5>
                 </div>
                 <div class="ml-auto p-2">
-                  <h5><img src="../assets/images/icon/broken/arrow-right.svg" alt="profile" /></h5>
+                  <h5><img src="../assets/images/icon/linear/arrow-right.svg" alt="profile" /></h5>
                 </div>
               </div>
             </div>
@@ -96,7 +95,7 @@
     .appendTo('#datatables tfoot');
 
     var table = $('#datatables').DataTable({
-      ajax: 'dataset/document_approval_signed.json', //get data from json
+      ajax: '../dataset/document_approval_signed.json', //get data from json
       orderCellsBottom: true,
       fixedHeader: true,
       order: [
