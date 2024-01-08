@@ -12,8 +12,8 @@
               <div class="card-body">
                 <div class="d-flex">
                   <div class="p-2">
-                    <h4><b>12</b></h4>
                     <p class="card-text">User Total</p>
+                    <h4><b>12</b></h4>
                   </div>
                   <div class="ml-auto p-2">
                     <h5><img src="../assets/images/icon/linear/user.svg" alt="profile" /></h5>
@@ -29,8 +29,8 @@
               <div class="card-body">
                 <div class="d-flex">
                   <div class="p-2">
-                    <h4><b>21</b></h4>
                     <p class="card-text">User New (<?= date('F')?>)</p>
+                    <h4><b>21</b></h4>
                   </div>
                   <div class="ml-auto p-2">
                     <h5><img src="../assets/images/icon/linear/user.svg" alt="profile" /></h5>
@@ -46,8 +46,8 @@
               <div class="card-body">
                 <div class="d-flex">
                   <div class="p-2">
-                    <h4><b>220</b></h4>
                     <p class="card-text">User Active</p>
+                    <h4><b>220</b></h4>
                   </div>
                   <div class="ml-auto p-2">
                     <h5><img src="../assets/images/icon/linear/user.svg" alt="profile" /></h5>
@@ -63,8 +63,8 @@
               <div class="card-body">
                 <div class="d-flex">
                   <div class="p-2">
-                    <h4><b>2</b></h4>
                     <p class="card-text">User Inactive</p>
+                    <h4><b>2</b></h4>
                   </div>
                   <div class="ml-auto p-2">
                     <h5><img src="../assets/images/icon/linear/user.svg" alt="profile" /></h5>
@@ -283,8 +283,8 @@
       orderCellsBottom: true,
       fixedHeader: true,
       order: [
-        [1, 'desc']
-        ],
+      [1, 'desc']
+      ],
       initComplete: function() {
         var api = this.api();
         api

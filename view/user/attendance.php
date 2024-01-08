@@ -26,6 +26,24 @@
         </div>
       </div>
 
+
+<!--       <script type="text/javascript" src="//cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+      <input  class="form-control round" type="text" name="daterange" value="01/01/2015 - 01/31/2015" />
+      <script type="text/javascript" src="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
+      <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
+
+
+      <script type="text/javascript">
+        $('input[name="daterange"]').daterangepicker(
+        {
+          locale: {
+            format: 'YYYY-MM-DD'
+          },
+          startDate: '2013-01-01',
+          endDate: '2013-12-31'
+        });
+      </script> -->
+
       <h5>Attendance History</h5>
       <hr>
       <div class="table-responsive p-3">
@@ -55,7 +73,7 @@
                   <input class="form-control form-control-sm mb-2" type="date" placeholder="to" required>
                 </div>
                 <div class="col-lg-4 col-md-12">
-                  <button class="form-control btn-sm btn btn-info mb-3" type="submit">Search</button>
+                  <button class="form-control form-control-sm btn-sm btn btn-info mb-3" type="submit">Search</button>
                 </div>
                 <hr>
               </div>
@@ -101,8 +119,8 @@
       orderCellsBottom: true,
       fixedHeader: true,
       order: [
-        [1, 'desc']
-        ],
+      [1, 'desc']
+      ],
       initComplete: function() {
         var api = this.api();
         api

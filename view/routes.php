@@ -7,6 +7,8 @@ $pages = [
 	"leave" 		=> "user/leave.php",
 	"dochistory"	=> "user/document_approval_history.php",
 	"docsigned"	    => "user/document_approval_signed.php",
+	"profile"	    => "user/profile.php",
+	"payslip"	    => "user/payslip.php",
 
 	// Admin Page
 	"mroles" 		=> "admin/roles_management.php",

@@ -90,13 +90,13 @@
 						<span class="nav-link menu-title">Personal Information</span>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" aria-expanded="false" aria-controls="ui-basic" href="#" data-toggle="modal" data-target="#profile">
+						<a class="nav-link" aria-expanded="false" aria-controls="ui-basic" href="#" onClick="window.location='home.php?v=profile'">
 							<i class="menu-icon"><img src="../assets/images/icon/linear/user.svg" class=""></i>
 							<span class="menu-title">Profile</span>
 						</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" aria-expanded="false" aria-controls="ui-basic" href="#" data-toggle="modal" data-target="#payslip">
+						<a class="nav-link" aria-expanded="false" aria-controls="ui-basic" href="#" data-toggle="modal" data-target="#modalPayslip">
 							<i class="menu-icon"><img src="../assets/images/icon/linear/dollar-circle.svg" class=""></i>
 							<span class="menu-title">Payslip</span>
 						</a>
@@ -113,12 +113,12 @@
 							<span class="menu-title">Leave</span>
 						</a>
 					</li>
-					<li class="nav-item">
+					<!-- <li class="nav-item">
 						<a class="nav-link" aria-expanded="false" aria-controls="ui-basic" href="#" onClick="window.location='home.php?v='">
 							<i class="menu-icon"><img src="../assets/images/icon/linear/health.svg" class=""></i>
 							<span class="menu-title">Medical</span>
 						</a>
-					</li><br>
+					</li> --><br>
 
 					<li class="">
 						<hr>
@@ -202,68 +202,72 @@
 			<div class="main-panel p-3" style="display:none;" id="myhome">
 				<?php include 'routes.php'; ?>
 
-				<!-- MODAL PROFIL -->
-				<div class="modal fade" id="profile" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-					<div class="modal-dialog" role="document">
-						<div class="modal-content round">
-							<div class="modal-body">
+				<!-- MODAL PAYSLIP -->
+				<div class="modal fade" id="modalPayslip" tabindex="-1" role="dialog" aria-hidden="true">
+					<div class="modal-dialog modal-dialog-top" role="document">
+						<div class="modal-content" style="border-radius: 15px;">
+							<div class="modal-header">
+								<h5 class="modal-title" id="exampleModalLongTitle">Payslip</h5>
 								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 									<span aria-hidden="true">&times;</span>
 								</button>
-								<b>Profile</b>
-								<hr>
-								<div class="alert alert-info alert-dismissible fade show round" role="alert">
-									<strong>Perhatian !<br></strong> Data yang ditampilkan sesuai dengan data sistem SAP, jika ada ketidaksesuaian data silahkan hubungi tim HR.
-								</div>
-								<form method="POST" action="#" enctype="multipart/form-data" class="mb-3">
-									<div class="form-group">
-										<label >Your Password</label>
-										<input name="password" type="password" id="passProfile" class="form-control round" placeholder="your password" required>
+							</div>
+							<form method="post" action="home.php?v=payslip" id="formPayslip" class="needs-validation" novalidate>
+								<div class="modal-body py-1">
+									<div class="card border round mb-3" style="background-color: rgba(36, 138, 253, 0.2);">
+										<div class="card-body">
+											<div class="d-flex">
+												<div class="p-2">
+													<h4><b>Perhatian !</b></h4>
+													<p class="card-text">Data yang ditampilkan sesuai dengan data sistem SAP, jika ada ketidaksesuaian data silahkan hubungi tim HR.</p>
+												</div>
+												<div class="ml-auto p-2">
+													<h5><img src="../assets/images/icon/linear/info-circle.svg" alt="profile"></h5>
+												</div>
+											</div>
+										</div>
 									</div>
-									<div class="form-group">
-										<div class="custom-control custom-checkbox mb-3">
+									<div class="form-group my-1">
+										<label for="nama">Period :</label>
+										<input name="periode" type="month" class="form-control round" value="<?= date('Y-m') ?>" required>
+										<small class="text-danger my-1" style="display: none;">Please fill out this field!</small>
+									</div>
+									<div class="form-group my-1">
+										<label for="nama">Password :</label>
+										<input type="password" class="form-control round" id="passProfile" name="password" placeholder="Password" required>
+										<!-- <small class="text-danger my-1" style="display: none;">Please fill out this field!</small> -->
+										<div class="custom-control custom-checkbox pt-2">
 											&emsp;<input type="checkbox" class="custom-control-input" id="showProfile" onclick="showPassProfile()">
 											<label class="custom-control-label" for="showProfile" style="color: #282f3a;">Show Password</label>
 										</div>
 									</div>
-									<button name="submit" type="submit" id="submit_password" class="btn btn-success mr-2 form-control round">Submit</button>
-								</form>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<!-- MODAL PAYSLIP -->
-				<div class="modal fade" id="payslip" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-					<div class="modal-dialog" role="document">
-						<div class="modal-content round">
-							<div class="modal-body">
-								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-									<span aria-hidden="true">&times;</span>
-								</button>
-								<b>Payslip</b>
-								<hr>
-								<div class="alert alert-info alert-dismissible fade show round" role="alert">
-									<strong>Perhatian !<BR></strong> Data yang ditampilkan sesuai dengan data sistem SAP, jika ada ketidaksesuaian data silahkan hubungi tim HR.
 								</div>
-								<form method="POST" action="#" enctype="multipart/form-data" class="mb-3">
-									<div class="form-group">
-										<label for="exampleInputUsername1">Periode</label>
-										<input name="periode" type="month" class="form-control round" placeholder="your password" value="<?= date('Y-m') ?>" required>
-									</div>
-									<div class="form-group">
-										<label >Your Password</label>
-										<input name="password" type="password" id="passPayslip" class="form-control round" placeholder="your password" required>
-									</div>
-									<div class="form-group">
-										<div class="custom-control custom-checkbox mb-3">
-											&emsp;<input type="checkbox" class="custom-control-input" id="showPayslip" onclick="showPassPayslip()">
-											<label class="custom-control-label" for="showPayslip" style="color: #282f3a;">Show Password</label>
-										</div>
-									</div>
-									<button name="submits" type="submit" id="submit_passwords" class="btn btn-success mr-2 form-control round">Submit</button>
-								</form>
-							</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-sm btn-basic border round w-25" data-dismiss="modal">Close</button>
+									<button type="submit" class="btn btn-sm btn-info round w-25">Submit</button>
+								</div>
+							</form>
+							<!-- Script JavaScript untuk validasi form -->
+							<script>
+								document.getElementById("formPayslip").addEventListener("submit", function(event) {
+									var form = event.target;
+									var fields = form.querySelectorAll("input[required], textarea[required]");
+
+									fields.forEach(function(field) {
+										var small = field.nextElementSibling;
+										if (!field.checkValidity()) {
+											small.style.display = "block";
+										} else {
+											small.style.display = "none";
+										}
+									});
+									if (form.checkValidity() === false) {
+										event.preventDefault();
+										event.stopPropagation();
+									}
+									form.classList.add('was-validated');
+								});
+							</script>
 						</div>
 					</div>
 				</div>

@@ -10,8 +10,8 @@
               <div class="card-body">
                 <div class="d-flex">
                   <div class="p-2">
-                    <h4><b>14</b></h4>
                     <p class="card-text">Total</p>
+                    <h4><b>14</b></h4>
                   </div>
                   <div class="ml-auto p-2">
                     <h5><img src="../assets/images/icon/linear/info-circle.svg" alt="profile" /></h5>
@@ -27,8 +27,8 @@
               <div class="card-body">
                 <div class="d-flex">
                   <div class="p-2">
-                    <h4><b>12</b></h4>
                     <p class="card-text">Sisa Cuti Tahunan</p>
+                    <h4><b>12</b></h4>
                   </div>
                   <div class="ml-auto p-2">
                     <h5><img src="../assets/images/icon/linear/info-circle.svg" alt="profile" /></h5>
@@ -44,8 +44,8 @@
               <div class="card-body">
                 <div class="d-flex">
                   <div class="p-2">
-                    <h4><b>2</b></h4>
                     <p class="card-text">Sisa Cuti Dinas</p>
+                    <h4><b>2</b></h4>
                   </div>
                   <div class="ml-auto p-2">
                     <h5><img src="../assets/images/icon/linear/info-circle.svg" alt="profile" /></h5>

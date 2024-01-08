@@ -50,14 +50,14 @@
 											<h5>Title Announcement</h5>
 											Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 										</small>
-										<a style="width: 100%;" type="button" class="btn btn-inverse-info btn-sm mt-3" data-toggle="modal" data-target="#announ">Read More</a>
+										<a style="width: 100%;" type="button" class="btn btn-inverse-info btn-sm mt-3" data-toggle="modal" data-target="#modalAnnouncement">Read More</a>
 									</div>
 									<div class="tab-pane fade" id="bulletin" role="tabpanel" aria-labelledby="bulletin-tab">
 										<small class="font-weight-400" style="overflow:hidden;color:#747473;display:-webkit-box;-webkit-line-clamp: 4;-webkit-box-orient: vertical;">
 											<h5>Title Announcement</h5>
 											Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries
 										</small>
-										<a style="width: 100%;" type="button" class="btn btn-inverse-info btn-sm mt-3" data-toggle="modal" data-target="#hsebulletin">Read More</a>
+										<a style="width: 100%;" type="button" class="btn btn-inverse-info btn-sm mt-3" data-toggle="modal" data-target="#modalBulletin">Read More</a>
 									</div>
 								</div>
 							</div>
@@ -162,13 +162,13 @@
 				<script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js" async>
 					{
 						"symbols": [
-							[
-								"IDX:MCOL|1D"
-								],
-							[
-								"IDX:MAHA|1D"
-								]
-							],
+						[
+						"IDX:MCOL|1D"
+						],
+						[
+						"IDX:MAHA|1D"
+						]
+						],
 						"chartOnly": false,
 						"width": "100%",
 						"height": "100%",
@@ -194,13 +194,13 @@
 						"lineWidth": 2,
 						"lineType": 0,
 						"dateRanges": [
-							"1d|1",
-							"1m|30",
-							"3m|60",
-							"12m|1D",
-							"60m|1W",
-							"all|1M"
-							],
+						"1d|1",
+						"1m|30",
+						"3m|60",
+						"12m|1D",
+						"60m|1W",
+						"all|1M"
+						],
 						"upColor": "#22ab94",
 						"downColor": "#f7525f",
 						"borderUpColor": "#22ab94",
@@ -243,96 +243,38 @@
 	</div>
 
 	<!-- MODAL ANNOUNCEMENT -->
-	<div class="modal fade" id="announ" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-		<div class="modal-dialog" role="document">
-			<div class="modal-content round">
-				<div class="modal-body">
+	<div class="modal fade" id="modalAnnouncement" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-top" role="document">
+			<div class="modal-content" style="border-radius: 15px;">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLongTitle">Title Announcement</h5>
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						<span aria-hidden="true">&times;</span>
 					</button>
-					<b>Title Announcement</b><hr>
-					<p style="color: #747473;">
-					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p><br><br>
-					<button style="width: 100%;" type="button" class="btn btn-inverse-danger btn-sm" data-dismiss="modal">Close</button>
 				</div>
-			</div>
-		</div>
-	</div>
-
-	<!-- MODAL ANNOUNCEMENT EDIT -->
-	<div class="modal fade" id="edit_announ" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-		<div class="modal-dialog" role="document">
-			<div class="modal-content round">
-				<div class="modal-body">
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-					<b>Edit Announcement</b>
-					<hr>
-					<form method="post" action="home.php?v=action&action=announcement&act=edit" method="post" enctype="multipart/form-data" id="form_timesheet" class="mb-3">
-						<div class="form-group">
-							<label for="">Title</label><span style="color:red;">*</span>
-							<input name="title" id="title" type="text" class="form-control round" id="act" placeholder="Title" value="Title Announcement">
-						</div>
-						<div class="form-group">
-							<label for="">Description</label><span style="color:red;">*</span>
-							<textarea name="desc" id="desc" class="form-control round" id="desc" placeholder="Description" rows="15">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</textarea>
-						</div>
-						<button name="submit" type="submit" id="submit_announcement" class="btn btn-success mr-2 form-control round">Save</button>
-					</form>
+				<div class="modal-body pt-2">
+					<p style="color: #747473;">
+						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+					</p>
 				</div>
 			</div>
 		</div>
 	</div>
 
 	<!-- MODAL BULLETIN -->
-	<div class="modal fade" id="hsebulletin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-		<div class="modal-dialog" role="document">
-			<div class="modal-content round">
-				<div class="modal-body">
+	<div class="modal fade" id="modalBulletin" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-top" role="document">
+			<div class="modal-content" style="border-radius: 15px;">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLongTitle">Title Bulletin</h5>
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						<span aria-hidden="true">&times;</span>
 					</button>
-					<b>Title Bulletin</b><hr>
-					<p style="color: #747473;">
-					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p><br><br>
-					<button style="width: 100%;" type="button" class="btn btn-inverse-danger " data-dismiss="modal">Close</button>
 				</div>
-			</div>
-		</div>
-	</div>
-
-	<!-- MODAL BULLETIN EDIT -->
-	<div class="modal fade" id="edit_bulletin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-		<div class="modal-dialog" role="document">
-			<div class="modal-content round">
-				<div class="modal-body">
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-					<b>Edit Bulletin</b>
-					<hr>
-					<form method="post" action="home.php?v=action&action=bulletin&act=edit" method="post" enctype="multipart/form-data" id="form_timesheet" class="mb-3">
-						<div class="form-group">
-							<label for="">Title</label><span style="color:red;">*</span>
-							<input name="title" id="title" type="text" class="form-control round" id="act" placeholder="Title" value="Title Bulletin">
-						</div>
-						<div class="form-group">
-							<label for="">Description</label><span style="color:red;">*</span>
-							<textarea name="desc" id="desc" class="form-control round" id="desc" placeholder="Description" rows="10">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</textarea>
-						</div>
-						<div class="form-group">
-							<label>Attachment</label>
-							<input type="file" name="file" id="file" class="file-upload-default round" id="fileupload" onchange="loadFile(event)">
-							<div class="input-group col-xs-12">
-								<input type="text" class="form-control file-upload-info round" disabled="" placeholder="Attachment">
-								<span class="input-group-append">
-									<button class="file-upload-browse btn btn-outline-secondary" type="button">Upload</button>
-								</span>
-							</div>
-						</div>
-						<button name="submit" type="submit" id="submit_bulletin" class="btn btn-success mr-2 form-control round">Save</button>
-					</form>
+				<div class="modal-body pt-2">
+					<p style="color: #747473;">
+						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+					</p>
 				</div>
 			</div>
 		</div>
